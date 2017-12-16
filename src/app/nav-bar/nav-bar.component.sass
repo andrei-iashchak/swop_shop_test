@@ -1,0 +1,65 @@
+\:host
+  .nav
+    background: #444444
+    color: white
+    display: flex
+    .logo
+      display: flex
+      font-size: 16px
+      padding: 10px
+      align-items: center
+      img
+        position: relative
+        width: 43px
+        height: 40px
+      .craft
+        display: none 
+      .absolute
+        position: absolute
+      span
+        padding: 0 10px
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        font-style: italic
+    .links
+      display: flex
+      width: 100%
+      div
+        display: flex
+        align-items: center
+        flex-grow: 1
+        margin: auto
+        padding: 0 15px
+        background-color: #f4c406
+        height: 100%
+        &:not(:first-child)
+          border-left: 1px solid #b99403
+        a
+          text-decoration: none
+          color: #b99403
+          font-size: 14px
+          padding-left: 10px
+        img
+          width: 30px
+          height: 23px
+    
+
+
+
+  @media all and (min-width: 1300px)
+    .nav
+      background: none
+      justify-content: center
+      .logo
+        padding-top: 25px
+        span
+          font-size: 40px
+        .craft
+          font-size: 13px
+          display: block
+        img
+          width: 90px
+          height: 85px
+      .links
+        width: auto
+        padding-left: 80px
+        padding-top: 72px

@@ -1,0 +1,53 @@
+\:host
+	.blocks
+		display: flex
+		padding: 10px 10px
+		div
+			flex-grow: 1
+			width: 50%
+		.text
+			font-size: 28px
+			color: white
+			padding-right: 10px
+			position: relative
+			p
+				margin: 0
+				padding: 20px
+				height: 100%
+				width: 100%
+				background-color: #ec9e03
+				font-family: 'Segoe WP', sans-serif
+			img
+				position: absolute
+				bottom: 20px
+				right: 25px
+		.video
+			position: relative
+			img
+				height: 100%
+				width: 100%
+				object-fit: cover
+			.circlePlay
+				left: 0
+				right: 0
+				top: 0
+				bottom: 0
+				width: 70px
+				height: 70px
+				border-radius: 70px
+				background-color: rgba(223, 205, 63, 0.9)
+				position: absolute
+				display: flex
+				margin: auto
+				.button
+					text-align: center
+					margin: auto
+					padding-left: 5px
+					img
+						width: 20px
+						height: 35px
+	@media all and (min-width: 1300px)
+		flex-grow: 2
+		.blocks
+			.text
+				padding-right: 0

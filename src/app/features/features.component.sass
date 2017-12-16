@@ -1,0 +1,46 @@
+\:host
+	.steps
+		background-color: blue
+		display: flex
+		background-color: #f2f2f2
+		justify-content: space-between
+		padding: 30px 10px 45px 10px
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			display: block
+			top: 0
+			right: 0
+			left: 0
+			bottom: 0
+			background: repeating-linear-gradient(45deg, rgba(0,0,0,0.025), rgba(0,0,0,0.025) 2px, transparent 2px, transparent 4px)
+		&:after
+			content: ""
+			height: 9px
+			position: absolute
+			display: block
+			top: -9px
+			left: 0
+			right: 0
+			background: linear-gradient(to top, rgba(255,255,255, 0.7) 0%, rgba(255,255,255, 0.7) 55%, rgba(255,255,255, 0.4) 55%, rgba(255,255,255, 0.4) 100%)
+		div
+			flex-grow: 1
+			text-align: center
+			position: relative
+			img
+				position: relative
+				height: 70px
+			span
+				padding-top: 20px
+				position: relative
+				display: block
+	@media all and (min-width: 1300px)
+		.steps
+			justify-content: center
+			padding: 0
+			div
+				height: 210px
+				width: 340px
+				&:not(:first-child)
+					border-left: 1px solid #b1b0ae
