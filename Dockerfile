@@ -14,4 +14,4 @@ WORKDIR /home/node/app
 RUN npm i
 ENV port 3000
 EXPOSE 3000
-ENTRYPOINT ["/usr/local/bin/npm", "ng", "serve", "--port 3000"]
+ENTRYPOINT ["/usr/local/bin/npm", "run", "ng", "serve", "--port 3000"]
