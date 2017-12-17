@@ -11,8 +11,8 @@ HEALTHCHECK --interval=5s \
 
 ADD . /home/node/app
 WORKDIR /home/node/app
+RUN npm i -g @angular/cli
 RUN npm i
 ENV port 3000
 EXPOSE 3000
-
-ENTRYPOINT ["/usr/local/bin/npm", "run", "dev"]
+ENTRYPOINT ["/usr/local/bin/npm", "ng", "serve", "--port 3000"]
