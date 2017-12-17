@@ -6,9 +6,13 @@ body {
 * {
 	box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans+Narrow:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans|PT+Sans+Narrow:400,700');
 @import url('https://fonts.googleapis.com/css?family=Asap');
 @font-face {
 	font-family: Segoe WP;
 	src: url("./segoewp.ttf");
+}
+@font-face {
+	font-family: Lau UI;
+	src: url("./LaoUI.ttf");
 }

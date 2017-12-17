@@ -3,6 +3,7 @@
     background: #444444
     color: white
     display: flex
+    height: 63px
     .logo
       display: flex
       font-size: 16px
@@ -12,11 +13,11 @@
         position: relative
         width: 43px
         height: 40px
-      .craft
+      p
         display: none 
       .absolute
         position: absolute
-      span
+      h3
         padding: 0 10px
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
         font-style: italic
@@ -43,23 +44,35 @@
           height: 23px
     
 
-
-
   @media all and (min-width: 1300px)
     .nav
       background: none
       justify-content: center
       .logo
         padding-top: 25px
-        span
+        h3
           font-size: 40px
-        .craft
+          font-weight: 100
+          padding: 0 5px
+        p
           font-size: 13px
           display: block
+          padding-top: 20px
+          font-family: 'Lao UI', sans-serif
+          text-transform: uppercase
         img
           width: 90px
           height: 85px
       .links
         width: auto
-        padding-left: 80px
-        padding-top: 72px
+        position: relative
+        top: 60px
+        height: 43px
+        left: 40px
+        div 
+          padding: 0 30px
+          img
+            width: 20px
+            height: 20px
+            object-fit: contain
+       
