@@ -1,5 +1,5 @@
 node {
-    def PROJECT_NAME = "fs.parilova.com"
+    def PROJECT_NAME = "ss.parilova.com"
     def DIST_DIR = "/var/builds/${PROJECT_NAME}"
     def environment
     stage "Prepare environment"
